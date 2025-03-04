@@ -713,7 +713,9 @@ section {
   }
   .info__img img,
   .possibility__img img,
-  .safety__img img, .access__img img, .translation__img img {
+  .safety__img img,
+  .access__img img,
+  .translation__img img {
     width: 100%;
   }
   .info__btns {
@@ -734,10 +736,12 @@ section {
   .possibility {
     padding: 80px 0;
   }
-  .safety, .access {
+  .safety,
+  .access {
     margin-bottom: 80px;
   }
-  .access__img-right, .translation__bg {
+  .access__img-right,
+  .translation__bg {
     display: none;
   }
   .footer {
