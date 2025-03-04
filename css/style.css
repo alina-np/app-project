@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("./fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #fff;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(16px, 1vw, 18px);
+  line-height: 156%;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+li {
+  list-style: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.btn {
+  width: 230px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.btn-white {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #5540bf;
+}
+.btn-white:hover {
+  background: transparent;
+}
+.btn-whiteWithBorder {
+  border: 1px solid #5540bf;
+  background: transparent;
+  color: #fff;
+}
+.btn-whiteWithBorder:hover {
+  background: #5540bf;
+  color: #fff;
+}
+.btn-purple {
+  border: 1px solid #5540bf;
+  background: #5540bf;
+  color: #fff;
+}
+.btn-purple:hover {
+  background: transparent;
+  color: #5540bf;
+}
+
+.container {
+  width: 100%;
+  max-width: 1090px;
+  margin: 0 auto;
+}
+
+.absolute {
+  position: absolute;
+}
+
+@media (max-width: 700px) {
+  .mobileMenu {
+    position: relative;
+    left: 40px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .mobileMenu__burger {
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  .mobileMenu.active .mobileMenu__burger:nth-of-type(1) {
+    display: none;
+  }
+  .mobileMenu.active .mobileMenu__burger:nth-of-type(2) {
+    transform: rotate(45deg);
+  }
+  .mobileMenu.active .mobileMenu__burger:nth-of-type(3) {
+    transform: rotate(-45deg);
+    margin-top: -12px;
+  }
+}/*# sourceMappingURL=style.css.map */
